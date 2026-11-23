@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 390" role="img" aria-label="淺色街廓示意圖">
+<rect width="560" height="390" fill="#e4eee9"/>
+<path d="M-5 331 Q138 253 266 336 T570 300 V390H-5Z" fill="#c4e4ee"/>
+<path d="M-6 292 Q146 217 274 288 T563 256" fill="none" stroke="#fdfbf3" stroke-width="15"/>
+<path d="M-20 119H580M-20 213H580M97-20V320M224-10V303M358-10V298M475-10V309" fill="none" stroke="#fffdf8" stroke-width="24"/>
+<path d="M-20 119H580M224-10V303" fill="none" stroke="#d1dcd4" stroke-width="1.5" stroke-dasharray="5 8"/>
+<g fill="#c5d5d3" stroke="#aebfbc" stroke-width="1">
+<path d="M16 23h55v26H16zm8 43h48v29H24zm89-38h35v68h-35zm51 2h42v25h-42zm0 44h37v24h-37zm85-55h84v29h-84zm2 44h31v35h-31zm48 2h34v31h-34zm78-42h31v68h-31zm47 12h29v53h-29zm75-16h43v29h-43zm0 42h44v36h-44z"/>
+<path d="M22 144h51v45H22zm99 1h30v44h-30zm47 2h37v42h-37zm83-3h33v44h-33zm50 5h29v41h-29zm79-8h39v51h-39zm49 2h23v45h-23zm68 0h44v43h-44zm-478 94h54v23H19zm101-1h81v23h-81zm139 3h72v23h-72zm119-2h74v36h-74zm122-3h44v26h-44z"/>
+</g>
+<path d="M-15 350 Q134 267 260 353 T568 315" fill="none" stroke="#add7e7" stroke-width="2"/>
+<g fill="#476463" font-family="system-ui,sans-serif" font-size="12" font-weight="600"><text x="30" y="123">大學路</text><text x="386" y="218">校園街</text><text x="413" y="360">河岸步道</text></g>
+</svg>

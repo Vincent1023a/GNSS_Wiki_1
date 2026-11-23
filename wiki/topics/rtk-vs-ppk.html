@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>RTK 和 PPK 怎麼選？</title><link rel="stylesheet" href="../../assets/course.css"></head>
+<body><header class="sitebar"><div class="shell"><a class="brand" href="../../index.html">GNSS 衛星定位原理</a><nav aria-label="網站導覽"><a href="../../wiki/index.html">Wiki</a><a href="../../reports/workflow.html">流程圖</a></nav></div></header>
+<main class="shell document"><h1>RTK 和 PPK 怎麼選？</h1>
+<p>先確認現場是否需要坐標，再檢查即時連線與可保留的觀測資料。</p>
+<table>
+<thead>
+<tr>
+<th>判斷項目</th>
+<th><a href="rtk.html">RTK</a></th>
+<th><a href="ppk.html">PPK</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>坐標何時解算</td>
+<td>外業期間</td>
+<td>資料蒐集後</td>
+</tr>
+<tr>
+<td>外業是否需要即時改正資料</td>
+<td>需要無線電或網路等傳輸方式</td>
+<td>可先記錄原始觀測，事後取得參考資料</td>
+</tr>
+<tr>
+<td>典型用途</td>
+<td>現場放樣、當場查看坐標</td>
+<td>可事後交付坐標的外業、路徑紀錄</td>
+</tr>
+<tr>
+<td>開工前先確認</td>
+<td>現場能否穩定接收改正資料</td>
+<td>能否記錄移動站觀測、取得同時段相容的參考觀測</td>
+</tr>
+</tbody>
+</table>
+<h2>兩個練習</h2>
+<ul>
+<li><strong>沿著道路標出設計點。</strong> 現場就要知道目前位置與設計點的偏差，且可穩定取得改正資料，可先評估 RTK。</li>
+<li><strong>測繪另一段山區道路的既有邊線。</strong> 行動網路不穩，坐標可以事後交付，且有辦法保存所需的移動站與參考站觀測，可先評估 PPK。</li>
+</ul>
+<p>兩者都仰賴足夠品質的衛星觀測和參考資料。樹冠或建物遮蔽、反射與參考站條件都可能影響結果。是否達標需按任務的容許誤差檢核。</p>
+<h2>來源</h2>
+<ul>
+<li><a href="../sources/trimble-gnss-surveys.html">Trimble Access — GNSS surveys</a></li>
+<li><a href="../sources/trimble-ppk-rover.html">Trimble Access — To start a postprocessed rover survey</a></li>
+</ul>
+<p><a href="../index.html">返回索引</a></p>
+</main>
+</body></html>

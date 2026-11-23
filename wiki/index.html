@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>GNSS 衛星定位原理</title><link rel="stylesheet" href="../assets/course.css"></head>
+<body><header class="sitebar"><div class="shell"><a class="brand" href="../index.html">GNSS 衛星定位原理</a><nav aria-label="網站導覽"><a href="../wiki/index.html">Wiki</a><a href="../reports/workflow.html">流程圖</a></nav></div></header>
+<main class="shell document"><h1>GNSS 衛星定位原理</h1>
+<p>這份 Wiki 給第一次接觸衛星定位測量的大學生。以 GPS 為例，跟著訊號走一遍，理解手機定位點如何出現在地圖上。</p>
+<p><a href="../reports/claims.html">教學主張與來源</a> · <a href="../raw/catalog.html">來源清冊</a></p>
+<h2>本課概念</h2>
+<ul>
+<li><a href="topics/navigation-message.html">導航電文與廣播星曆</a></li>
+<li><a href="topics/pseudorange.html">測距碼與虛擬距離</a></li>
+<li><a href="topics/clock-geometry.html">二維測距圓與共用鐘差</a></li>
+<li><a href="topics/single-point.html">單點定位與四個未知數</a></li>
+<li><a href="topics/ecef-map.html">ECEF、經緯度與地圖</a></li>
+<li><a href="topics/blue-dot.html">手機的藍點從哪裡來</a></li>
+<li><a href="topics/position-errors.html">高樓遮蔽、多路徑與電離層</a></li>
+<li><a href="topics/between-receiver.html">地面一次差（跨接收機）</a></li>
+</ul>
+<h2>本課來源摘要</h2>
+<ul>
+<li><a href="sources/GNSS-01.html">GNSS-01 GPS Navigation Message</a></li>
+<li><a href="sources/GNSS-02.html">GNSS-02 GPS and Galileo Satellite Coordinates Computation</a></li>
+<li><a href="sources/GNSS-03.html">GNSS-03 GNSS Basic Observables</a></li>
+<li><a href="sources/GNSS-04.html">GNSS-04 Code Based Positioning (SPS)</a></li>
+<li><a href="sources/GNSS-05.html">GNSS-05 Ellipsoidal and Cartesian Coordinates Conversion</a></li>
+<li><a href="sources/GNSS-06.html">GNSS-06 Fused Location Provider API</a></li>
+<li><a href="sources/GNSS-07.html">GNSS-07 Find &amp; improve your location’s accuracy in Google Maps</a></li>
+<li><a href="sources/GNSS-08.html">GNSS-08 GPS Accuracy</a></li>
+<li><a href="sources/GNSS-09.html">GNSS-09 GAMIT/GLOBK 2.1 Phase and Pseudorange Observations</a></li>
+<li><a href="sources/GNSS-10.html">GNSS-10 Precise GPS Positioning in the Marine Environment</a></li>
+<li><a href="sources/GNSS-11.html">GNSS-11 GNSS Receivers General Introduction</a></li>
+<li><a href="sources/GNSS-12.html">GNSS-12 Map and Tile Coordinates</a></li>
+<li><a href="sources/GNSS-13.html">GNSS-13 IS-GPS-200N</a></li>
+</ul>
+<h2>既有 RTK／PPK 入門教材</h2>
+<p>第一次接觸衛星定位，建議先讀 <a href="topics/gnss.html">GNSS</a>，再用 <a href="topics/rtk-vs-ppk.html">RTK 和 PPK 怎麼選？</a> 練習。</p>
+<h3>入門詞條</h3>
+<ul>
+<li><a href="topics/gnss.html">GNSS（全球導航衛星系統）</a> · 提供定位、導航和授時的衛星系統總稱。</li>
+<li><a href="topics/base-and-rover.html">基準站與移動站</a> · 一端提供參考，另一端在待測位置蒐集資料。</li>
+<li><a href="topics/corrections.html">改正資料與原始觀測</a> · 前者用於改善解算，後者是儀器從衛星訊號量得的資料。</li>
+<li><a href="topics/rtk.html">RTK（即時動態定位）</a> · 測量時取得參考資料，在現場解算位置。</li>
+<li><a href="topics/ppk.html">PPK（後處理動態定位）</a> · 先記錄觀測，再用同時段的參考資料計算位置。</li>
+<li><a href="topics/e-gnss.html">台灣 e-GNSS</a> · 國土測繪中心提供的衛星定位服務，可作為網路 RTK 的台灣例子。</li>
+<li><a href="topics/rtk-vs-ppk.html">RTK 和 PPK 怎麼選？</a> · 先確認現場是否需要坐標，再檢查即時連線與可保留的觀測資料。</li>
+</ul>
+<h3>來源</h3>
+<ul>
+<li><a href="sources/karpathy-llm-wiki.html">Karpathy — LLM Wiki</a> · 三層架構，以及納入、查詢、品質檢查的分工。</li>
+<li><a href="sources/gps-gov-gnss.html">GPS.gov — GPS 與其他 GNSS</a> · GNSS 的範圍，以及 GPS、Galileo、北斗和 GLONASS 的例子。</li>
+<li><a href="sources/gps-gov-gps.html">GPS.gov — GPS</a> · 衛星廣播位置與時間資訊，接收機用這些訊號計算位置與時間。</li>
+<li><a href="sources/trimble-gnss-surveys.html">Trimble Access — GNSS surveys</a> · 用設備原廠的說明對照 RTK 資料傳輸、PPK 原始觀測及混合工作流程。設備操作僅適用於文件標明的產品版本。</li>
+<li><a href="sources/trimble-ppk-rover.html">Trimble Access — To start a postprocessed rover survey</a> · 補充 PPK 的外業設定與初始化條件。網頁路徑為 latest，引用產品操作時需重新核對版本。</li>
+<li><a href="sources/nlsc-egnss.html">國土測繪中心 — e-GNSS 即時動態定位系統</a> · 官方入口介紹。服務申請與最新資訊請回查官方中文入口。</li>
+<li><a href="sources/nlsc-egnss-service.html">國土測繪中心 — e-GNSS 服務供應要點</a> · 以明列的虛擬基準站觀測資料回傳流程說明台灣案例。現行服務細節請回查官方公告。</li>
+</ul>
+<p><a href="../AGENTS.html">Wiki 維護規則</a></p>
+</main>
+</body></html>

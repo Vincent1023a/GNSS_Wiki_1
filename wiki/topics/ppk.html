@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>PPK（後處理動態定位）</title><link rel="stylesheet" href="../../assets/course.css"></head>
+<body><header class="sitebar"><div class="shell"><a class="brand" href="../../index.html">GNSS 衛星定位原理</a><nav aria-label="網站導覽"><a href="../../wiki/index.html">Wiki</a><a href="../../reports/workflow.html">流程圖</a></nav></div></header>
+<main class="shell document"><h1>PPK（後處理動態定位）</h1>
+<p>先記錄觀測，再用同時段的參考資料計算位置。</p>
+<p>PPK 是 Post-Processed Kinematic。常見流程是在外業記錄移動站的原始衛星觀測，作業後取得相同時段且相容的基準站觀測，再用軟體一起解算停點或連續路徑的坐標。</p>
+<p>例如山區道路沿線的行動網路不穩，工作只需要事後交付已量測的點位。若有適合的衛星觀測條件，且能保存移動站資料、取得相容的參考觀測，就可以評估 PPK。外業可在沒有即時改正資料連線的情況下記錄觀測。回去後才能取得這套流程的解算成果，收工前要確認所需資料有記錄，以降低補測風險。</p>
+<p>延伸閱讀見<a href="base-and-rover.html">基準站與移動站</a>、<a href="corrections.html">改正資料與原始觀測</a>和 <a href="rtk-vs-ppk.html">RTK／PPK 比較</a>。</p>
+<h2>來源</h2>
+<ul>
+<li><a href="../sources/trimble-gnss-surveys.html">Trimble Access — GNSS surveys</a></li>
+<li><a href="../sources/trimble-ppk-rover.html">Trimble Access — To start a postprocessed rover survey</a></li>
+</ul>
+<p><a href="../index.html">返回索引</a></p>
+</main>
+</body></html>

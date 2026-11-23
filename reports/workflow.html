@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>兩輪工作流程圖</title><link rel="stylesheet" href="../assets/course.css"></head>
+<body><header class="sitebar"><div class="shell"><a class="brand" href="../index.html">GNSS 衛星定位原理</a><nav aria-label="網站導覽"><a href="../wiki/index.html">Wiki</a><a href="../reports/workflow.html">流程圖</a></nav></div></header>
+<main class="shell document">
+<h1>兩輪工作流程圖</h1>
+<p>第一輪保留先生成初稿的過程。第二輪把技術主張的核對移到生成之前，最後仍用瀏覽器測操作。</p>
+<h2>第一輪　先生成，再檢查</h2>
+<ol class="workflow">
+  <li><strong>1　納入資料</strong>閱讀原文，寫來源摘要及概念。</li>
+  <li><strong>2　查詢 Wiki</strong>執行 Wiki lint，依逐頁問題查來源。</li>
+  <li><strong>3　生成初稿</strong>保留第一版 HTML。</li>
+  <li><strong>4　逐頁檢查</strong>回查主張、原文和適用條件。</li>
+</ol>
+<div class="jumps"><div>第 4 步發現證據不足，回第 1 步補資料，再查詢。</div><div>第 4 步發現文字含糊，回第 2 步對照概念與措辭，再生成。</div></div>
+<h2>第二輪　生成前核對證據</h2>
+<ol class="workflow">
+  <li id="ingest"><strong>1　納入或補證</strong>更新來源、概念、交叉連結及索引。</li>
+  <li id="query"><strong>2　查詢 Wiki</strong>寫出逐頁主張及適用條件。</li>
+  <li id="review"><strong>3　生成前核對</strong>逐項對照來源段落並確認通過。</li>
+  <li id="build"><strong>4　生成 HTML</strong>比對講稿和證據版本。</li>
+  <li id="browser"><strong>5　瀏覽器實測</strong>檢查大小螢幕、操作與連結。</li>
+  <li id="deliver"><strong>6　交付</strong>同站輸出教材、Wiki 和紀錄。</li>
+</ol>
+<div class="jumps">
+  <div>第 3 步證據不足，<a href="#ingest">回第 1 步補來源</a>，再查詢。</div>
+  <div>第 3 步文字超出證據，<a href="#query">回第 2 步修正文稿</a>，再核對。</div>
+  <div>第 5 步操作有誤，<a href="#build">回第 4 步修正 HTML</a>，再跑瀏覽器。</div>
+  <div>第 5 步若發現新的技術疑問，<a href="#review">回第 3 步重審</a>。</div>
+</div>
+<p><a href="claims.html">查看生成前的主張對照</a></p>
+</main>
+
+</body></html>

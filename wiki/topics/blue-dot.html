@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>手機的藍點從哪裡來</title><link rel="stylesheet" href="../../assets/course.css"></head>
+<body><header class="sitebar"><div class="shell"><a class="brand" href="../../index.html">GNSS 衛星定位原理</a><nav aria-label="網站導覽"><a href="../../wiki/index.html">Wiki</a><a href="../../reports/workflow.html">流程圖</a></nav></div></header>
+<main class="shell document"><h1>手機的藍點從哪裡來</h1>
+<p>以 Android 上的 Google 地圖為例，藍點代表應用程式取得的位置估計。Android 的手機定位服務可以結合 GPS、Wi-Fi 等來源。產品文件支持這種融合能力，但沒有公開每次藍點更新的來源比例。<a href="../sources/GNSS-06.html">GNSS-06</a> <a href="../sources/GNSS-07.html">GNSS-07</a></p>
+<p>以 GPS 說明一條資料路徑：讀取<a href="navigation-message.html">導航電文</a>，取得衛星位置所需資料。用<a href="pseudorange.html">測距碼</a>估計每顆衛星的虛擬距離。用多筆觀測<a href="single-point.html">解三維坐標及接收機鐘差</a>，再將解算出的地固位置<a href="ecef-map.html">轉成經緯度</a>送入地圖顯示。四步是教學順序，接收機實際會持續追蹤與處理訊號。<a href="../sources/GNSS-01.html">GNSS-01</a> <a href="../sources/GNSS-02.html">GNSS-02</a> <a href="../sources/GNSS-03.html">GNSS-03</a> <a href="../sources/GNSS-04.html">GNSS-04</a> <a href="../sources/GNSS-05.html">GNSS-05</a> <a href="../sources/GNSS-07.html">GNSS-07</a> <a href="../sources/GNSS-11.html">GNSS-11</a></p>
+<p>Google 地圖用淡藍圈傳達不確定性。課程橘色標示是誤差或受影響訊號的教學圖例，不代表裝置的實測誤差。也可讀<a href="position-errors.html">街道定位誤差</a>。<a href="../sources/GNSS-07.html">GNSS-07</a></p>
+<p><a href="../index.html">返回 Wiki 索引</a></p>
+</main>
+</body></html>

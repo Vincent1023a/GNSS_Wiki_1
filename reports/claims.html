@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>投影片技術主張、Wiki 與原文對照</title><link rel="stylesheet" href="../assets/katex.min.css"><link rel="stylesheet" href="../assets/course.css"></head>
+<body><header class="sitebar"><div class="shell"><a class="brand" href="../index.html">GNSS 衛星定位原理</a><nav aria-label="網站導覽"><a href="../wiki/index.html">Wiki</a><a href="../reports/workflow.html">流程圖</a></nav></div></header>
+<main class="shell document"><h1>投影片技術主張、Wiki 與原文對照</h1>
+<p>此表記錄第二輪生成前核對的教學主張。每筆來源 ID 連至 Wiki 來源摘要，摘要頁可開啟原文。最後一頁是導覽與延伸閱讀。</p>
+<table>
+<thead>
+<tr>
+<th>投影片</th>
+<th>技術主張或引用用途</th>
+<th>Wiki 概念頁</th>
+<th>來源 ID 與原文定位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第 1 頁</td>
+<td>藍點是手機位置的估計。手機定位服務可能融合 GPS 與 Wi-Fi。</td>
+<td><a href="../wiki/topics/blue-dot.html">手機的藍點從哪裡來</a></td>
+<td><a href="../wiki/sources/GNSS-06.html">GNSS-06</a> Simple, battery-efficient location API for Android；<a href="../wiki/sources/GNSS-07.html">GNSS-07</a> Understand what the blue dot means</td>
+</tr>
+<tr>
+<td>第 1 頁</td>
+<td>先把導航電文整理成星曆和鐘差參數，再用測距碼估計虛擬距離。</td>
+<td><a href="../wiki/topics/blue-dot.html">手機的藍點從哪裡來</a></td>
+<td><a href="../wiki/sources/GNSS-01.html">GNSS-01</a> 開頭第 2 段；<a href="../wiki/sources/GNSS-02.html">GNSS-02</a> <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">t_k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0315em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq> 及發射時刻定義；<a href="../wiki/sources/GNSS-03.html">GNSS-03</a> Pseudorange 第一、二式；<a href="../wiki/sources/GNSS-11.html">GNSS-11</a> Finding and tracking satellites</td>
+</tr>
+<tr>
+<td>第 1 頁</td>
+<td>用多顆衛星的觀測解位置和鐘差，位置轉成地圖上的點。四步是教學資料流，接收機持續追蹤。</td>
+<td><a href="../wiki/topics/blue-dot.html">手機的藍點從哪裡來</a></td>
+<td><a href="../wiki/sources/GNSS-04.html">GNSS-04</a> 開頭及式 (1)–(6)；<a href="../wiki/sources/GNSS-05.html">GNSS-05</a> From Cartesian to Ellipsoidal coordinates；<a href="../wiki/sources/GNSS-07.html">GNSS-07</a> Understand what the blue dot means；<a href="../wiki/sources/GNSS-11.html">GNSS-11</a> Overview 與追蹤迴路</td>
+</tr>
+<tr>
+<td>第 1 頁</td>
+<td>顯示時以經緯度換算畫面位置。</td>
+<td><a href="../wiki/topics/ecef-map.html">ECEF、經緯度與地圖</a></td>
+<td><a href="../wiki/sources/GNSS-12.html">GNSS-12</a> World coordinates 與 Pixel coordinates</td>
+</tr>
+<tr>
+<td>第 2 頁</td>
+<td>導航電文含星曆和衛星鐘參數。用有效星曆及發射時刻算衛星位置。</td>
+<td><a href="../wiki/topics/navigation-message.html">導航電文與廣播星曆</a></td>
+<td><a href="../wiki/sources/GNSS-01.html">GNSS-01</a> 開頭第 2–3 段；<a href="../wiki/sources/GNSS-02.html">GNSS-02</a> Table 1 與 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">t_k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0315em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq>；<a href="../wiki/sources/GNSS-13.html">GNSS-13</a> 表 20-IV 印刷頁 106–107</td>
+</tr>
+<tr>
+<td>第 3 頁</td>
+<td>測距碼對齊提供時間差資訊。P 用兩端時刻差乘光速，含鐘差、傳播及反射等項。</td>
+<td><a href="../wiki/topics/pseudorange.html">測距碼與虛擬距離</a></td>
+<td><a href="../wiki/sources/GNSS-11.html">GNSS-11</a> Finding and tracking satellites；<a href="../wiki/sources/GNSS-03.html">GNSS-03</a> Pseudorange 公式及其變數說明</td>
+</tr>
+<tr>
+<td>第 4 頁</td>
+<td>理想化二維模型以 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>i</mi></msub><mo>=</mo><msub><mi>ρ</mi><mi>i</mi></msub><mo>+</mo><mi>c</mi><mtext> </mtext><mi>δ</mi><msub><mi>t</mi><mi>r</mi></msub></mrow><annotation encoding="application/x-tex">P_i=\rho_i+c\,\delta t_r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7778em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">ρ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord mathnormal">c</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0379em;">δ</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0278em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq> 表示，正的接收機鐘差等量增加各半徑。</td>
+<td><a href="../wiki/topics/clock-geometry.html">二維測距圓與共用鐘差</a></td>
+<td><a href="../wiki/sources/GNSS-03.html">GNSS-03</a> Pseudorange 觀測式；<a href="../wiki/sources/GNSS-04.html">GNSS-04</a> 式 (1) 共用接收機鐘差</td>
+</tr>
+<tr>
+<td>第 5 頁</td>
+<td>同一單系統時刻，每顆衛星提供一個碼距離觀測。解算四個未知數至少需要四顆衛星及足夠的觀測幾何。更多觀測可用來估計同樣的四個量。</td>
+<td><a href="../wiki/topics/single-point.html">單點定位與四個未知數</a></td>
+<td><a href="../wiki/sources/GNSS-04.html">GNSS-04</a> 開頭、式 (1)–(6) 與設計矩陣</td>
+</tr>
+<tr>
+<td>第 6 頁</td>
+<td>ECEF 的 X、Y、Z 可依相容參考橢球轉成緯度、經度、橢球高，經緯度可投影到地圖像素。</td>
+<td><a href="../wiki/topics/ecef-map.html">ECEF、經緯度與地圖</a></td>
+<td><a href="../wiki/sources/GNSS-05.html">GNSS-05</a> From Cartesian to Ellipsoidal coordinates；<a href="../wiki/sources/GNSS-12.html">GNSS-12</a> World coordinates、Pixel coordinates</td>
+</tr>
+<tr>
+<td>第 6 頁</td>
+<td>位置服務可以提供融合後的位置估計，地圖用藍點表示。</td>
+<td><a href="../wiki/topics/blue-dot.html">手機的藍點從哪裡來</a></td>
+<td><a href="../wiki/sources/GNSS-06.html">GNSS-06</a> Simple, battery-efficient location API for Android；<a href="../wiki/sources/GNSS-07.html">GNSS-07</a> Understand what the blue dot means</td>
+</tr>
+<tr>
+<td>第 7 頁</td>
+<td>遮蔽使訊號不可用，反射可能改變碼觀測。橘色線和位移只是教學示意。</td>
+<td><a href="../wiki/topics/position-errors.html">高樓遮蔽、多路徑與電離層</a></td>
+<td><a href="../wiki/sources/GNSS-03.html">GNSS-03</a> Pseudorange 的多路徑項；<a href="../wiki/sources/GNSS-08.html">GNSS-08</a> Why does GPS sometimes show me in the wrong place?</td>
+</tr>
+<tr>
+<td>第 7 頁</td>
+<td>手機定位服務也可能融合其他訊號，單看藍點無法識別誤差來源。</td>
+<td><a href="../wiki/topics/blue-dot.html">手機的藍點從哪裡來</a></td>
+<td><a href="../wiki/sources/GNSS-06.html">GNSS-06</a> 底層 GPS、Wi-Fi 與多感測來源；<a href="../wiki/sources/GNSS-07.html">GNSS-07</a> 藍點的不確定性說明</td>
+</tr>
+<tr>
+<td>第 8 頁</td>
+<td>第一題的答案與回饋以廣播星曆和發射時刻計算衛星位置為依據。</td>
+<td><a href="../wiki/topics/navigation-message.html">導航電文與廣播星曆</a></td>
+<td><a href="../wiki/sources/GNSS-01.html">GNSS-01</a> 開頭第 2 段；<a href="../wiki/sources/GNSS-13.html">GNSS-13</a> 表 20-IV 第 1–2 頁</td>
+</tr>
+<tr>
+<td>第 8 頁</td>
+<td>第二題的答案與回饋以三個坐標及共用接收機鐘差為依據。</td>
+<td><a href="../wiki/topics/single-point.html">單點定位與四個未知數</a></td>
+<td><a href="../wiki/sources/GNSS-04.html">GNSS-04</a> 開頭及式 (1)</td>
+</tr>
+<tr>
+<td>第 9 頁</td>
+<td>延伸入口導至同衛星、同碼、對齊觀測的站間一次差。</td>
+<td><a href="../wiki/topics/between-receiver.html">地面一次差（跨接收機）</a></td>
+<td><a href="../wiki/sources/GNSS-09.html">GNSS-09</a> §2.1 第 4 段；<a href="../wiki/sources/GNSS-10.html">GNSS-10</a> §2.4，式 (2.15) 與圖 2.4</td>
+</tr>
+</tbody>
+</table>
+</main>
+</body></html>
